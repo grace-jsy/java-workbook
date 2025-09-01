@@ -28,6 +28,7 @@ public class Q3 {
         }
     }
 
+    // 주소값이 매개변수로 들어간다
     public static int[] addArrays(int[] arr1, int[] arr2) {
         int[] result = new int[arr1.length];
         for(int i = 0; i < arr1.length; i++) {
