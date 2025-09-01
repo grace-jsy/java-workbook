@@ -23,12 +23,30 @@ public class Q5 {
         }
     }
 
+    // StringBuilder로 문자열 뒤집기
+//    public static String[] reverseStrings(String[] words) {
+//        String[] results = new String[words.length];
+//
+//        for (int i = 0; i < words.length; i++) {
+//
+//            results[i] = new StringBuilder(words[i]).reverse().toString();
+//        }
+//        return results;
+//    }
+
+    // for문으로 문자열 뒤집기
     public static String[] reverseStrings(String[] words) {
         String[] results = new String[words.length];
 
         for (int i = 0; i < words.length; i++) {
-            //StringBuilder로 문자열 뒤집기
-            results[i] = new StringBuilder(words[i]).reverse().toString();
+            String word = words[i];
+            String reversed = ""; // 뒤집은 문자열을 저장할 변수
+
+            // word의 마지막 문자부터 처음까지 차례대로 붙이기
+            for (int j = word.length() - 1; j >= 0; j--) {
+                reversed += word.charAt(j);
+            }
+            results[i] = reversed;
         }
         return results;
     }

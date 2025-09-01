@@ -8,5 +8,18 @@ public class Q6 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         // TODO: factorial 호출 후 결과 출력
+
+        long result = factorial(n);
+        System.out.println(result);
+    }
+
+    public static long factorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("N should be greater than 0");
+        }
+        if (n == 0 || n == 1) { // 기저 사례
+            return 1L;
+        }
+        return n * factorial(n - 1);
     }
 }
