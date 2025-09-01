@@ -7,7 +7,13 @@ public class Q1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
-        // int result = primitiveParam(x); // TODO: primitiveParam 메서드 작성 후 주석 해제
+         int result = primitiveParam(x); // TODO: primitiveParam 메서드 작성 후 주석 해제
+
         // TODO: 원래 x와 메서드 반환 값 출력
+        System.out.println(x + " " + result);
+    }
+
+    public static int primitiveParam(int x) {
+        return x + 10;
     }
 }
