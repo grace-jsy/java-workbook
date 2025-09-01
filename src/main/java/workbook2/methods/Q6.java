@@ -9,8 +9,8 @@ public class Q6 {
         int n = sc.nextInt();
         // TODO: factorial 호출 후 결과 출력
 
-        long result = factorial(n);
-        System.out.println(result);
+        long result = factorial(n); // factorial 호출
+        System.out.println(result); // 결과 출력
     }
 
     public static long factorial(int n) {
@@ -20,6 +20,6 @@ public class Q6 {
         if (n == 0 || n == 1) { // 기저 사례
             return 1L;
         }
-        return n * factorial(n - 1);
+        return n * factorial(n - 1); // 재귀 호출
     }
 }
