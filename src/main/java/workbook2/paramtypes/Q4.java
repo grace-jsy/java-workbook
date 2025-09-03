@@ -3,8 +3,12 @@ package main.java.workbook2.paramtypes;
 import java.util.Scanner;
 
 class Person {
+
     String name;
-    Person(String name) { this.name = name; }
+
+    Person (String name) {
+        this.name = name;
+    }
 }
 
 public class Q4 {
@@ -13,8 +17,17 @@ public class Q4 {
         Scanner sc = new Scanner(System.in);
         String oldName = sc.next();
         String newName = sc.next();
+
         Person p = new Person(oldName);
-        // changeName(p, newName); // TODO: changeName 메서드 작성 후 주석 해제
+
+
+         changeName(p, newName); // TODO: changeName 메서드 작성 후 주석 해제
+
         // TODO: p.name 출력
+        System.out.println(p.name);
+    }
+
+    public static void changeName(Person p, String newName) {
+            p.name = newName;
     }
 }
