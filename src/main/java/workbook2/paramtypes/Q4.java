@@ -14,7 +14,14 @@ public class Q4 {
         String oldName = sc.next();
         String newName = sc.next();
         Person p = new Person(oldName);
-        // changeName(p, newName); // TODO: changeName 메서드 작성 후 주석 해제
+
+         changeName(p, newName); // TODO: changeName 메서드 작성 후 주석 해제
         // TODO: p.name 출력
+
+        System.out.println(p.name);
+    }
+
+    public static void changeName(Person p, String newName) {
+        p.name = newName;
     }
 }
