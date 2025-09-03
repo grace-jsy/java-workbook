@@ -5,7 +5,11 @@ import java.util.Scanner;
 class Pair {
     int a;
     int b;
-    Pair(int a, int b) { this.a = a; this.b = b; }
+
+    Pair(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
 }
 
 public class Q5 {
@@ -14,8 +18,17 @@ public class Q5 {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
+
         Pair pair = new Pair(x, y);
-        // swapPair(pair); // TODO: swapPair 메서드 작성 후 주석 해제
+
+         swapPair(pair, x, y); // TODO: swapPair 메서드 작성 후 주석 해제
+
         // TODO: pair.a와 pair.b 출력
+        System.out.println(pair.a + " " + pair.b);
+    }
+
+    public static void swapPair(Pair pair, int x, int y) {
+        pair.a = y;
+        pair.b = x;
     }
 }
