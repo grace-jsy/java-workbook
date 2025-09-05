@@ -8,5 +8,13 @@ public class Q2 {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         // TODO: toUpper 호출 후 결과 출력
+
+        String upperStr = toUpper(str);
+        System.out.println(upperStr);
+    }
+
+
+    public static String toUpper(String str) {
+        return str.toUpperCase();
     }
 }
