@@ -9,5 +9,13 @@ public class Q1 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         // TODO: add 호출 후 결과 출력
+
+        int sum = add(a, b);
+        System.out.println(sum);
+    }
+
+
+    public static int add(int a, int b) {
+        return a + b;
     }
 }
